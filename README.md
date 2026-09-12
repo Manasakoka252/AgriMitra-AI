@@ -73,7 +73,7 @@ Compare multiple mandis based on:
 
 ### 📍 Location-Based Comparison
 
-The farmer can select a location from the supported locations.
+The farmer can select a supported location.
 
 The application calculates the approximate distance between the farmer's location and each mandi using geographical coordinates.
 
@@ -89,11 +89,11 @@ Estimate transportation costs based on:
 - Quantity
 - Transport-related assumptions
 
-The estimated transport cost is then considered when calculating the potential net value.
+The estimated transport cost is considered when calculating the potential net value.
 
 ### 🤖 AI Advisor
 
-AgriMitra AI includes a TypeScript-based rule-driven decision engine that evaluates market information and provides recommendations.
+AgriMitra AI includes a **TypeScript-based rule-driven decision engine** that evaluates market information and provides recommendations.
 
 The advisor considers factors including:
 
@@ -103,7 +103,7 @@ The advisor considers factors including:
 - Price trends
 - Overall market score
 
-The goal is to convert raw market information into simpler, actionable insights.
+The goal is to convert market information into simpler, actionable insights.
 
 ### 📈 Market Trends
 
@@ -115,19 +115,19 @@ View market trends and changes in:
 
 ### 🔔 Market Alerts
 
-The application provides market-related alerts and highlights based on available market information.
+View market-related alerts and highlights based on the available market information.
 
 ### ⭐ Favorites
 
-Users can save preferred markets for easier access.
+Save preferred markets for easier access.
 
 ### 🌱 My Crops
 
-Users can save crop information and use it when exploring market options.
+Save crop information and use it when exploring market options.
 
 ### 🌐 Multilingual Interface
 
-The application includes support for:
+The application supports:
 
 - English
 - Telugu
@@ -164,76 +164,96 @@ Estimate Net Value
 Rank Markets
        ↓
 Provide Decision Support
+```
 
-The market score combines multiple factors rather than relying on price alone.
 
-Market Score
+### Market Score
 
 The current scoring model considers:
 
-Factor	Maximum Score
-Price	40
-Transportation	25
-Market Arrivals	20
-Price/Market Trend	15
-Total	100
+| Factor | Maximum Score |
+|---|---:|
+| Price | 40 |
+| Transportation | 25 |
+| Market Arrivals | 20 |
+| Price/Market Trend | 15 |
+| **Total** | **100** |
 
-This approach is intended to give the farmer a broader view of the selling decision.
+This scoring approach considers multiple market factors instead of relying on price alone.
 
-📊 Data
+---
 
-The project is currently built with structured demo/historical agricultural market data.
+## 📊 Data
+
+The current version uses **structured demo/historical agricultural market data**.
 
 The application is designed around agricultural market information such as:
 
-Crop
-Market
-District
-State
-Minimum price
-Maximum price
-Modal price
-Arrival quantity
-Price trend
-Arrival trend
+- Crop
+- Market
+- District
+- State
+- Minimum price
+- Maximum price
+- Modal price
+- Arrival quantity
+- Price trend
+- Arrival trend
 
 The data model is designed to support integration with official agricultural market datasets.
 
-Data Sources / Reference
+### Data Sources / References
 
 The project is based on the structure and concepts used in Indian agricultural market information systems such as:
 
-AGMARKNET
-e-NAM
-data.gov.in
+- [AGMARKNET](https://agmarknet.gov.in/)
+- [e-NAM](https://enam.gov.in/)
+- [data.gov.in](https://www.data.gov.in/)
 
-Important: The current deployed version does not fetch live mandi prices directly from these sources. The application uses structured demo/historical data for the current implementation.
+> **Important:** The current deployed version does not fetch live mandi prices directly from these sources. It uses structured demo/historical data for the current implementation.
 
-🛠️ Tech Stack
-Frontend
-Next.js
-React
-TypeScript
-Tailwind CSS
-shadcn/ui
-Data Visualization
-Recharts
-UI / Interaction
-Lucide React
-Framer Motion / CSS animations
-React Hooks
-Application Logic
-TypeScript-based decision engine
-Haversine distance calculation
-Market scoring
-Transportation cost estimation
-Local storage for user preferences
-Development & Deployment
-VS Code
-Git
-GitHub
-Vercel
-📁 Project Structure
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+
+### Data Visualization
+
+- Recharts
+
+### UI & Interaction
+
+- Lucide React
+- Framer Motion / CSS animations
+- React Hooks
+
+### Application Logic
+
+- TypeScript-based decision engine
+- Haversine distance calculation
+- Market scoring
+- Transportation cost estimation
+- Local storage for user preferences
+
+### Development & Deployment
+
+- VS Code
+- Git
+- GitHub
+- Vercel
+
+---
+
+## 📁 Project Structure
+
+```text
 AgriMitra-AI/
 │
 ├── src/
@@ -280,124 +300,159 @@ AgriMitra-AI/
 ├── .gitignore
 ├── package.json
 ├── next.config.mjs
+├── postcss.config.js
 ├── tailwind.config.ts
 ├── tsconfig.json
 └── README.md
-⚙️ Getting Started
-Prerequisites
+```
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
 
 Make sure you have installed:
 
-Node.js
-npm
-Git
-1. Clone the repository
+- Node.js
+- npm
+- Git
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/Manasakoka252/AgriMitra-AI.git
-2. Navigate to the project
+```
+
+### 2. Navigate to the project
+
+```bash
 cd AgriMitra-AI
-3. Install dependencies
+```
+
+### 3. Install dependencies
+
+```bash
 npm install
-4. Start the development server
+```
+
+### 4. Start the development server
+
+```bash
 npm run dev
+```
 
 Open:
 
+```text
 http://localhost:3000
-🏗️ Production Build
+```
+
+---
+
+## 🏗️ Production Build
 
 To create a production build locally:
 
+```bash
 npm run build
+```
 
 To start the production server:
 
+```bash
 npm start
-🚀 Deployment
+```
 
-The project is deployed using Vercel and connected to the GitHub repository.
+---
+## 🚀 Deployment
 
-Deployment workflow
+The project is deployed using **Vercel** and connected to the GitHub repository.
+
+### Deployment Workflow
+
+```text
 Local Development
        ↓
-     Git
+      Git
        ↓
     GitHub
        ↓
     Vercel
        ↓
  Live Application
+```
 
-Every update can be committed and pushed to the main branch, allowing Vercel to build and deploy the updated application.
+Updates can be committed and pushed to the `main` branch, allowing Vercel to build and deploy the updated application.
 
-Live Application
+### Live Application
 
-👉 https://agri-mitra-ai-xi.vercel.app/
+👉 **[Open AgriMitra AI](https://agri-mitra-ai-xi.vercel.app/)**
 
-🔮 Future Improvements
+---
+## 🔮 Future Improvements
 
-The current application is a working decision-support prototype. Some planned improvements include:
-
-📡 Live Market Data
+### 📡 Live Market Data
 
 Integrate official agricultural market APIs/data services where available so that market prices and arrivals can be updated automatically.
 
-🗺️ Road-Based Distance
+### 🗺️ Road-Based Distance
 
 Replace approximate geographical distance with actual road distance and travel time using a suitable maps/routing service.
 
-🚛 Improved Transport Estimation
+### 🚛 Improved Transport Estimation
 
 Allow users to select:
 
-Vehicle type
-Capacity
-Fuel assumptions
-Transport rate
+- Vehicle type
+- Vehicle capacity
+- Fuel assumptions
+- Transport rate
 
 for more realistic transportation estimates.
 
-📊 Historical Analytics
+### 📊 Historical Analytics
 
 Add more historical market data to improve:
 
-Price trend analysis
-Seasonal patterns
-Market comparisons
-🤖 Advanced AI
+- Price trend analysis
+- Seasonal pattern analysis
+- Market comparisons
+
+### 🤖 Advanced AI
 
 The current recommendation engine is rule-based. Future versions could explore machine learning models for:
 
-Price forecasting
-Demand/arrival prediction
-Personalized market recommendations
+- Price forecasting
+- Demand/arrival prediction
+- Personalized market recommendations
 
 Any predictive model would be presented as an estimate rather than a guaranteed future price.
 
-⚠️ Current Limitations
-Market data in the current version is demo/historical data.
-Live mandi price updates are not currently connected.
-Distance is based on geographical coordinates rather than live road routing.
-Transportation costs are estimates and may differ from actual local transport charges.
-Market recommendations are decision-support suggestions and should not be treated as guaranteed profit predictions.
-🏆 Project Achievement
+---
 
-🥇 1st Prize — AI Innovation Challenge
+## ⚠️ Current Limitations
 
-AgriMitra AI was developed as an AI-focused solution to help address a practical agricultural market decision-making problem.
+- Market data in the current version is demo/historical data.
+- Live mandi price updates are not currently connected.
+- Distance is based on geographical coordinates rather than live road routing.
+- Transportation costs are estimates and may differ from actual local transport charges.
+- Market recommendations are decision-support suggestions and should not be treated as guaranteed profit predictions.
 
-👩‍💻 Author
-Koka Manasa
+---
 
-Python Developer | SQL | Machine Learning
+## 🏆 Project Achievement
 
-Interested in building practical technology solutions using software development, data, and AI.
+### 🥇 1st Prize — AI Innovation Challenge
 
-📄 License
+AgriMitra AI was developed as an AI-focused solution to address a practical agricultural market decision-making problem.
+
+---
+
+## 👩‍💻 Author
+
+### Koka Manasa
+
+## 📄 License
 
 This project is intended for educational, demonstration, and portfolio purposes.
-
-
-
-
-
-
