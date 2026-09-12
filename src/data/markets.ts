@@ -1,0 +1,171 @@
+import { Mandi } from "@/types/market";
+
+export const MANDIS_DATA: Mandi[] = [
+  {
+    id: "kolar-apmc",
+    name: "Kolar APMC Market",
+    district: "Kolar",
+    state: "Karnataka",
+    distanceKm: 12,
+    latitude: 13.1367,
+    longitude: 78.1291,
+    operatingDays: "Mon - Sat (6 AM - 4 PM)",
+    gradingAvailable: true,
+    facilities: [
+      "Electronic Weighbridge",
+      "Cold Storage Nearby",
+      "Bank Counters",
+      "Assay Lab",
+    ],
+  },
+
+  {
+    id: "chikkaballapur-apmc",
+    name: "Chikkaballapur APMC",
+    district: "Chikkaballapur",
+    state: "Karnataka",
+    distanceKm: 38,
+    latitude: 13.4355,
+    longitude: 77.7315,
+    operatingDays: "All Days (5 AM - 5 PM)",
+    gradingAvailable: true,
+    facilities: [
+      "Electronic Weighbridge",
+      "Farmer Rest House",
+      "e-NAM Yard",
+    ],
+  },
+
+  {
+    id: "bengaluru-yeshwanthpur",
+    name: "Bengaluru (Yeshwanthpur RMC)",
+    district: "Bengaluru Urban",
+    state: "Karnataka",
+    distanceKm: 65,
+    latitude: 13.0280,
+    longitude: 77.5400,
+    operatingDays: "All Days (24 Hours)",
+    gradingAvailable: true,
+    facilities: [
+      "Major Export Hub",
+      "Cold Storage",
+      "Bank Branches",
+      "Multi-trader Yard",
+    ],
+  },
+
+  {
+    id: "malur-apmc",
+    name: "Malur Market Yard",
+    district: "Kolar",
+    state: "Karnataka",
+    distanceKm: 22,
+    latitude: 13.0034,
+    longitude: 77.9370,
+    operatingDays: "Mon - Sat (7 AM - 3 PM)",
+    gradingAvailable: false,
+    facilities: [
+      "Weighbridge",
+      "Local Direct Traders",
+    ],
+  },
+
+  {
+    id: "ramanagara-apmc",
+    name: "Ramanagara APMC Yard",
+    district: "Ramanagara",
+    state: "Karnataka",
+    distanceKm: 88,
+    latitude: 12.7150,
+    longitude: 77.2800,
+    operatingDays: "Mon - Sat (6 AM - 6 PM)",
+    gradingAvailable: true,
+    facilities: [
+      "Sericulture & Agri Yard",
+      "Digital Auctions",
+    ],
+  },
+
+  {
+    id: "madanapalle-apmc",
+    name: "Madanapalle Tomato Market",
+    district: "Annamayya / Chittoor",
+    state: "Andhra Pradesh",
+    distanceKm: 92,
+    latitude: 13.5503,
+    longitude: 78.5029,
+    operatingDays: "All Days (4 AM - 6 PM)",
+    gradingAvailable: true,
+    facilities: [
+      "Asia's Major Tomato Yard",
+      "Cold Chain",
+      "Export Logistics",
+    ],
+  },
+
+  {
+    id: "guntur-apmc",
+    name: "Guntur Mirchi Yard",
+    district: "Guntur",
+    state: "Andhra Pradesh",
+    distanceKm: 340,
+    latitude: 16.3067,
+    longitude: 80.4365,
+    operatingDays: "Mon - Fri (7 AM - 5 PM)",
+    gradingAvailable: true,
+    facilities: [
+      "Asia's Largest Chilli Yard",
+      "Cold Storage Hub",
+      "Assaying Center",
+    ],
+  },
+
+  {
+    id: "lasalgaon-apmc",
+    name: "Lasalgaon APMC (Nashik)",
+    district: "Nashik",
+    state: "Maharashtra",
+    distanceKm: 680,
+    latitude: 20.1427,
+    longitude: 74.2326,
+    operatingDays: "Mon - Sat (8 AM - 6 PM)",
+    gradingAvailable: true,
+    facilities: [
+      "Asia's Largest Onion Market",
+      "Rail Siding",
+      "Government Warehouse",
+    ],
+  },
+
+  {
+    id: "nizamabad-apmc",
+    name: "Nizamabad RMC",
+    district: "Nizamabad",
+    state: "Telangana",
+    distanceKm: 520,
+    latitude: 18.6725,
+    longitude: 78.0941,
+    operatingDays: "Mon - Sat (7 AM - 4 PM)",
+    gradingAvailable: true,
+    facilities: [
+      "e-NAM Enabled",
+      "Turmeric & Grain Hub",
+    ],
+  },
+
+  {
+    id: "hosur-apmc",
+    name: "Hosur Vegetable Market",
+    district: "Krishnagiri",
+    state: "Tamil Nadu",
+    distanceKm: 58,
+    latitude: 12.7409,
+    longitude: 77.8253,
+    operatingDays: "All Days (5 AM - 3 PM)",
+    gradingAvailable: false,
+    facilities: [
+      "Direct Retailer Yard",
+      "Cold Logistics",
+    ],
+  },
+];
