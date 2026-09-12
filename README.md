@@ -14,15 +14,24 @@
 
 ---
 
-## 📌 Problem Statement
+ ## 📌 Problem Statement
 
-Farmers often need to consider more than just the highest market price when deciding where to sell their produce.
+Imagine a farmer has harvested a crop and stored the produce in a warehouse so that it can be sold when market conditions are favorable.
 
-A market offering a higher price may not always be the better option if it is much farther away or involves higher transportation costs.
+The farmer may want to monitor mandi prices regularly and decide when and where to sell the produce.
 
-AgriMitra AI addresses this problem by bringing multiple market factors together and presenting them in a simple decision-support interface.
+However, this can be difficult in practice:
 
----
+- 📱 Market prices may change frequently, so regular monitoring is required.
+- 🤝 A farmer may not have direct contacts or a network with people in different market yards.
+- 🏪 Getting price information from multiple mandis can be difficult.
+- 🚜 Even if another mandi offers a better price, the farmer also needs to consider the distance and transportation cost.
+- 📊 Comparing prices, arrivals, and market conditions manually can take time.
+
+As a result, a farmer may miss an opportunity to sell at a more suitable market or may choose a market based only on the available price information.
+
+AgriMitra AI addresses this problem by bringing relevant market information together in one place and helping farmers compare markets based on price, distance, transportation cost, arrivals, and trends.
+
 
 ## 💡 Solution
 
