@@ -1,5 +1,18 @@
 export type LanguageCode = "en" | "te" | "kn" | "hi";
 
+export interface Crop {
+  id: string;
+  name: string;
+  nameTranslations: Record<LanguageCode, string>;
+  category: string;
+  varietyDefault: string;
+  icon: string;
+  unit: string;
+  typicalMinPrice: number;
+  typicalMaxPrice: number;
+  shelfLifeDays: number;
+}
+
 export interface Mandi {
   id: string;
   name: string;
@@ -13,20 +26,9 @@ export interface Mandi {
   facilities: string[];
 }
 
-export interface Mandi {
-  id: string;
-  name: string;
-  district: string;
-  state: string;
-  distanceKm: number; // default distance relative to regional hub (e.g. Kolar)
-  operatingDays: string;
-  gradingAvailable: boolean;
-  facilities: string[];
-}
-
 export interface MarketRecord {
   id: string;
-  date: string; // YYYY-MM-DD
+  date: string;
   state: string;
   district: string;
   market: string;
@@ -34,21 +36,21 @@ export interface MarketRecord {
   crop: string;
   cropId: string;
   variety: string;
-  minPrice: number; // ₹ per quintal
-  maxPrice: number; // ₹ per quintal
-  modalPrice: number; // ₹ per quintal
-  arrivalQuantity: number; // in quintals
+  minPrice: number;
+  maxPrice: number;
+  modalPrice: number;
+  arrivalQuantity: number;
   previousModalPrice?: number;
   priceTrend: "increasing" | "decreasing" | "stable";
   arrivalTrend: "high" | "moderate" | "low";
 }
 
 export interface MarketScore {
-  totalScore: number; // 0-100
-  priceScore: number; // max 40
-  transportScore: number; // max 25
-  arrivalScore: number; // max 20
-  trendScore: number; // max 15
+  totalScore: number;
+  priceScore: number;
+  transportScore: number;
+  arrivalScore: number;
+  trendScore: number;
   explanation: {
     label: string;
     score: number;

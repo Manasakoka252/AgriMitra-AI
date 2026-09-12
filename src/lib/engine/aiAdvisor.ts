@@ -69,10 +69,15 @@ export function generateMarketInsight(
       district: rec.district,
       state: rec.state,
       distanceKm: 25,
+      latitude: 0,
+      longitude: 0,
       operatingDays: "Mon - Sat",
       gradingAvailable: true,
       facilities: [],
     };
+
+
+    
 
     const netCalc = calculateNetValue(quantityQuintals, rec.modalPrice, mandi.distanceKm);
     const score = calculateMarketScore(mandi, rec, quantityQuintals, maxPriceInRegion);
